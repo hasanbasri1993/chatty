@@ -1,16 +1,13 @@
-# chatty
+# Chatty
 
-A new Flutter project.
+Design from https://pixel.buildwithangga.com/details/chatty
 
-## Getting Started
+## Screenshoots
 
-This project is a starting point for a Flutter application.
+[<img src="https://user-images.githubusercontent.com/6375150/149201436-fed1a6e7-a4a5-4979-9dac-a1a15a033610.png" width="250"/>](image.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[<img src="https://user-images.githubusercontent.com/6375150/149201464-ecd8ecd3-8c67-45e9-b25d-d6450ca71d00.png" width="250"/>](image.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+[<img src="https://user-images.githubusercontent.com/6375150/149201482-57b57fc8-f8f9-4c63-b182-87c95fa9ab9f.png" width="250"/>](image.png)
