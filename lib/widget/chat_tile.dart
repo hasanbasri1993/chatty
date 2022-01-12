@@ -1,3 +1,4 @@
+import 'package:chatty/pages/message_page.dart';
 import 'package:flutter/material.dart';
 import '../theme.dart';
 
@@ -21,39 +22,52 @@ class ChatTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
-      child: Row(
-        children: [
-          Image.asset(
-            imageUrl,
-            height: 50,
-            width: 50,
-          ),
-          const SizedBox(width: 12),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                name,
-                style: titleTextStyle,
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push<void>(
+            context,
+            MaterialPageRoute<void>(
+              builder: (BuildContext context) => MessagePage(
+                imageUrl: imageUrl,
+                title: name,
               ),
-              Text(
-                text,
-                style: unread
-                    ? subtitleTextStyle.copyWith(
-                        color: blackColor,
-                      )
-                    : subtitleTextStyle,
-              ),
-            ],
-          ),
-          const Spacer(),
-          Text(
-            time,
-            style: subtitleTextStyle.copyWith(
-              color: blackColor,
             ),
-          )
-        ],
+          );
+        },
+        child: Row(
+          children: [
+            Image.asset(
+              imageUrl,
+              height: 50,
+              width: 50,
+            ),
+            const SizedBox(width: 12),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  name,
+                  style: titleTextStyle,
+                ),
+                Text(
+                  text,
+                  style: unread
+                      ? subtitleTextStyle.copyWith(
+                          color: blackColor,
+                        )
+                      : subtitleTextStyle,
+                ),
+              ],
+            ),
+            const Spacer(),
+            Text(
+              time,
+              style: subtitleTextStyle.copyWith(
+                color: blackColor,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
